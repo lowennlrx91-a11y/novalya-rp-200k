@@ -1,0 +1,9 @@
+# Dépendances et fichiers générés localement
+node_modules/
+dist/
+.vite/
+
+# Fichiers temporaires système
+.DS_Store
+Thumbs.db
+*.log
