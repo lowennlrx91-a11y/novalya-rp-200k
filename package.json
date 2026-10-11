@@ -1,0 +1,26 @@
+{
+  "name": "novalya-rp-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine 3D de NovaLya RP",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "esbuild src/main.js --bundle --minify --format=iife --target=es2019 --loader:.jpg=dataurl --outfile=js/main.js",
+    "build:boutique": "esbuild boutique/src/shop3d.src.js --bundle --minify --format=esm --target=es2020 --outfile=boutique/shop3d.js",
+    "build:all": "npm run build && npm run build:boutique",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "esbuild": "^0.28.2",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://lowennlrx91-a11y.github.io/novalya-rp-200k/"
+}
